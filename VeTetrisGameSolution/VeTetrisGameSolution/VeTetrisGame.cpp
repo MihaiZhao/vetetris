@@ -25,13 +25,13 @@ void VeTetrisGame::loop(const float deltaTime)
 
 void VeTetrisGame::loadPices()
 {
-	m_piece[SquarePiece]->load("");
-	m_piece[IPiece]->load("");
-	m_piece[LPiece]->load("");
-	m_piece[LMirroredPiece]->load("");
-	m_piece[NPiece]->load("");
-	m_piece[NMirroredPiece]->load("");
-	m_piece[TPiece]->load("");
+	m_piece[SquarePiece]	->load(SquarePieceLocation);
+	m_piece[IPiece]			->load(IPieceLocation);
+	m_piece[LPiece]			->load(LPieceLocation);
+	m_piece[LMirroredPiece]	->load(LMirroredPieceLocation);
+	m_piece[NPiece]			->load(NPieceLocation);
+	m_piece[NMirroredPiece]	->load(NMirroredPieceLocation);
+	m_piece[TPiece]			->load(TPieceLocation);
 
 
 
