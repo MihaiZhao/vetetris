@@ -25,7 +25,7 @@ public:
 	// Piece functions
 
 	void load(std::string fileName);
-	Tile& getData(int row, int column) { return m_pieceData[row][column]; }
+	int getData(int row, int column) { return m_pieceData[row][column].getCell(); }
 };
 
 #endif

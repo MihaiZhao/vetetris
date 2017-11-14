@@ -44,7 +44,9 @@ void Piece::load(std::string fileName)
 		{
 			int data;
 			pieceFile >> data;
-			m_pieceData[Y_pos][X_pos].setCell( data );
+			if (data == 0) m_pieceData[Y_pos][X_pos].setCell( 0 );
+			if (data == 1) m_pieceData[Y_pos][X_pos].setCell( 1 );
+
 		}
 	}
 

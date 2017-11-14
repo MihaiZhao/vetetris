@@ -1,14 +1,15 @@
 #include "VeTetrisGame.h"
+#include "windows.h"
 
 
-
-VeTetrisGame::VeTetrisGame(Board *pBoard, Piece *pPiece)
+VeTetrisGame::VeTetrisGame()
 {
+	currPiece = NPiece;
+	m_board.setCurrentPiece(currPiece);
+	currentXPOS = 20;
+	currentYPOS = 0;
+	m_board.drawPieceOnBoard(getCurrentYPOS(), getCurrentXPOS());
 
-	m_board = pBoard;
-	m_piece[7] = pPiece;
-	
-	m_board->render();
 }
 
 
@@ -18,25 +19,25 @@ VeTetrisGame::~VeTetrisGame()
 
 void VeTetrisGame::loop(const float deltaTime)
 {
-	
+	m_board.render();
+	system("pause>nul");
 
+	if (GetAsyncKeyState(VK_LEFT)) setCurrentXPOS(getCurrentXPOS() - 1 );
+	if (GetAsyncKeyState(VK_RIGHT)) setCurrentXPOS(getCurrentXPOS() + 1);
+	if (GetAsyncKeyState(VK_DOWN)) setCurrentYPOS(getCurrentYPOS() + 1);
+
+	m_board.drawPieceOnBoard(getCurrentYPOS(), getCurrentXPOS());
+	system("cls");
 
 }
 
 void VeTetrisGame::loadPices()
 {
-	m_piece[SquarePiece]	->load(SquarePieceLocation);
-	m_piece[IPiece]			->load(IPieceLocation);
-	m_piece[LPiece]			->load(LPieceLocation);
-	m_piece[LMirroredPiece]	->load(LMirroredPieceLocation);
-	m_piece[NPiece]			->load(NPieceLocation);
-	m_piece[NMirroredPiece]	->load(NMirroredPieceLocation);
-	m_piece[TPiece]			->load(TPieceLocation);
-
-
-
-
-
-
-
+	m_piece[SquarePiece]	.load(SquarePieceLocation);		// For location check VeTetrisGame.h Line:9
+	m_piece[IPiece]			.load(IPieceLocation);			// For location check VeTetrisGame.h Line:9
+	m_piece[LPiece]			.load(LPieceLocation);			// For location check VeTetrisGame.h Line:9
+	m_piece[LMirroredPiece]	.load(LMirroredPieceLocation);	// For location check VeTetrisGame.h Line:9
+	m_piece[NPiece]			.load(NPieceLocation);			// For location check VeTetrisGame.h Line:9
+	m_piece[NMirroredPiece]	.load(NMirroredPieceLocation);	// For location check VeTetrisGame.h Line:9
+	m_piece[TPiece]			.load(TPieceLocation);			// For location check VeTetrisGame.h Line:9
 }
