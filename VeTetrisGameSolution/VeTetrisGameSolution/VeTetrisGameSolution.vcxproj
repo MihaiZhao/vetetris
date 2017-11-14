@@ -111,6 +111,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\GameAssignment\VeTetris Visual Studio Solution\VeTetris\VeTetris\Game.cpp" />
+    <ClCompile Include="..\..\..\..\GameAssignment\VeTetris Visual Studio Solution\VeTetris\VeTetris\GameObject.cpp" />
+    <ClCompile Include="..\..\..\..\GameAssignment\VeTetris Visual Studio Solution\VeTetris\VeTetris\Timer.cpp" />
+    <ClCompile Include="..\..\..\..\GameAssignment\VeTetris Visual Studio Solution\VeTetris\VeTetris\vector2.cpp" />
+    <ClCompile Include="Board.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Piece.cpp" />
+    <ClCompile Include="Tile.cpp" />
+    <ClCompile Include="VeTetrisGame.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\GameAssignment\VeTetris Visual Studio Solution\VeTetris\VeTetris\Game.h" />
+    <ClInclude Include="..\..\..\..\GameAssignment\VeTetris Visual Studio Solution\VeTetris\VeTetris\GameObject.h" />
+    <ClInclude Include="..\..\..\..\GameAssignment\VeTetris Visual Studio Solution\VeTetris\VeTetris\Timer.h" />
+    <ClInclude Include="..\..\..\..\GameAssignment\VeTetris Visual Studio Solution\VeTetris\VeTetris\vector2.h" />
+    <ClInclude Include="Board.h" />
+    <ClInclude Include="Piece.h" />
+    <ClInclude Include="Tile.h" />
+    <ClInclude Include="VeTetrisGame.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
