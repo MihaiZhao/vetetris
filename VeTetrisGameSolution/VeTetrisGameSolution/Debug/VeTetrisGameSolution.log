@@ -1,2 +1,4 @@
 ﻿  VeTetrisGame.cpp
+c:\users\nti\desktop\vetetris\vetetris\vetetrisgamesolution\vetetrisgamesolution\vetetrisgame.cpp(50): warning C4715: 'VeTetrisGame::checkColisionRight': not all control paths return a value
+c:\users\nti\desktop\vetetris\vetetris\vetetrisgamesolution\vetetrisgamesolution\vetetrisgame.cpp(55): warning C4715: 'VeTetrisGame::checkColisionLeft': not all control paths return a value
   VeTetrisGameSolution.vcxproj -> C:\Users\NTI\Desktop\VeTetris\vetetris\VeTetrisGameSolution\Debug\VeTetrisGameSolution.exe
